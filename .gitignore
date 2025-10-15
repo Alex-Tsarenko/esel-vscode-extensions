@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+
+# VSCode compiled output
+out/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode workspace settings
+.vscode/*
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
