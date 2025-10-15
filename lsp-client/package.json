@@ -1,0 +1,42 @@
+{
+  "name": "esel-lsp-client",
+  "displayName": "Esel LSP Client",
+  "description": "Esel LSP Client",
+  "version": "0.0.1",
+  "publisher": "Alex-Tsarenko",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alex-Tsarenko/esel-vscode-extensions.git"
+  },
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:esel"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "esel",
+        "aliases": [
+          "Esel"
+        ],
+        "extensions": [
+          ".esel",
+          "sl"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.105.0",
+    "typescript": "^5.0.0",
+    "vscode-languageclient": "^9.0.1"
+  }
+}
