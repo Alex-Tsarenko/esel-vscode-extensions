@@ -29,6 +29,9 @@
       }
     ]
   },
+  "dependencies": {
+    "vscode-languageclient": "^9.0.1"
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./"
@@ -36,7 +39,6 @@
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/vscode": "^1.105.0",
-    "typescript": "^5.0.0",
-    "vscode-languageclient": "^9.0.1"
+    "typescript": "^5.0.0"
   }
 }
